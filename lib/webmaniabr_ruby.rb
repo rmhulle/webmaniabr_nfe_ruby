@@ -1,7 +1,5 @@
-require 'webmaniabr_ruby/version'
+require "webmaniabr_ruby/version"
 
-class WebmaniabrRuby
-  def self.hi
-    puts 'hello'
-  end
+module WebmaniabrRuby
+  # Your code goes here...
 end
