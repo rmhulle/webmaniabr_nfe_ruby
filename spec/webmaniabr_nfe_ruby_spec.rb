@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe WebmaniabrRuby do
+describe WebmaniabrNfeRuby do
   it 'has a version number' do
     expect(WebmaniabrRuby::VERSION).not_to be nil
   end

@@ -1,7 +1,7 @@
-module WebmaniabrRuby
-  class ValidateA1Cert < ApiInterface
+module WebmaniabrNfeRuby
+  class SefazStatus < ApiInterface
     def initialize(options = {})
-      super('nfe/certificado/')
+      super('nfe/sefaz/')
     end
 
     def request
