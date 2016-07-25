@@ -4,7 +4,7 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require 'webmaniabr_nfe_ruby/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = "webmaniabr_ruby"
+  spec.name          = "webmaniabr_nfe_ruby"
   spec.version       = WebmaniabrNfeRuby::VERSION
   spec.authors       = ["Marcelo Perini Veloso\n\n"]
   spec.email         = ["marcelo.perini.veloso@gmail.com"]
