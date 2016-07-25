@@ -7,7 +7,7 @@ module WebmaniabrNfeRuby
     end
 
     def request
-      return process(@request)
+      return process(method: 'POST', params: @request.to_hash)
     end
   end
 end

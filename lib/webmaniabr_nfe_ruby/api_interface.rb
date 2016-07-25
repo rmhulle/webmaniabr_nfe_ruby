@@ -27,7 +27,7 @@ module WebmaniabrNfeRuby
         req['Content-Type']          = 'application/json'
 
         if options[:params]
-          req.body = options[:params]
+          req.body = options[:params].to_json
         end
 
         http.request(req)

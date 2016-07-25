@@ -12,6 +12,18 @@ module WebmaniabrNfeRuby
         @city         = options[:city]
         @cep          = options[:cep]
       end
+
+      def to_hash
+        {
+          cnpj: @cnpj,
+          razao_social: @company_name,
+          ie: @ie,
+          endereco: @address,
+          uf: @uf,
+          cidade: @city,
+          cep: @cep
+        }
+      end
     end
   end
 end

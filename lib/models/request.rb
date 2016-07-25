@@ -21,17 +21,33 @@ module WebmaniabrNfeRuby
       end
 
       def to_hash
+        products = []
+
+        if @products.class == Array
+          @products.each do |product|
+            products.push product.to_hash
+          end
+        end
+
+        if @transport
+          transport = @transport.to_hash
+        else
+          transport = ''
+        end
+
         {
-          id: @id,
+          ID: @id,
           url_notificacao: @url_notification,
+          operacao: @operation,
+          natureza_operacao: @operation_nature,
           modelo: @model,
           emissao: @emission,
           finalidade: @goal,
           ambiente: @environment,
-          cliente: @client,
-          produtos: @produtos,
-          pedido: @order,
-          transporte: @transport
+          cliente: @client.to_hash,
+          produtos: products,
+          pedido: @order.to_hash,
+          transporte: transport
         }
       end
     end

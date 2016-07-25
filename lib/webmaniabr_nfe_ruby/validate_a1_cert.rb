@@ -5,7 +5,7 @@ module WebmaniabrNfeRuby
     end
 
     def request
-      return process()
+      return process(method: 'GET')
     end
   end
 end

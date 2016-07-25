@@ -28,7 +28,7 @@ module WebmaniabrNfeRuby
     ValidateA1Cert.new.request
   end
 
-  def self.submit_nfe(options)
-    SubmitNfe.new.request(options)
+  def self.submit_nfe(options = {})
+    SubmitNfe.new(options).request
   end
 end
