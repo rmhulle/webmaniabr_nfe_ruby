@@ -1,17 +1,17 @@
 # coding: utf-8
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 'webmaniabr_ruby/version'
+require 'webmaniabr_nfe_ruby/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = "webmaniabr_ruby"
-  spec.version       = WebmaniabrRuby::VERSION
+  spec.name          = "webmaniabr_nfe_ruby"
+  spec.version       = WebmaniabrNfeRuby::VERSION
   spec.authors       = ["Marcelo Perini Veloso\n\n"]
   spec.email         = ["marcelo.perini.veloso@gmail.com"]
 
-  spec.summary       = %q{A gem to integrate WebmaniaBr API}
-  spec.description   = %q{This gem provide an easy way to integrate WebmaniaBr API }
-  spec.homepage      = "https://github.com/Sidoniuns/webmaniabr_ruby"
+  spec.summary       = %q{A gem to integrate WebmaniaBr Nfe API}
+  spec.description   = %q{This gem provide an easy way to integrate WebmaniaBr Nfe API }
+  spec.homepage      = "https://github.com/Sidoniuns/webmaniabr_nfe_ruby"
   spec.license       = "MIT"
 
   # Prevent pushing this gem to RubyGems.org. To allow pushes either set the 'allowed_push_host'

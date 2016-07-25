@@ -1,4 +1,4 @@
-module WebmaniabrRuby
+module WebmaniabrNfeRuby
   class Authenticate
     attr_accessor :consumer_key, :consumer_secret, :access_token,
       :access_token_secret
