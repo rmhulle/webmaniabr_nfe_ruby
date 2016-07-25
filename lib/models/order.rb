@@ -22,7 +22,7 @@ module WebmaniabrNfeRuby
           presenca: @presence,
           modalidade_frete: @ship_type,
           frete: @ship_value,
-          discount: @discount,
+          desconto: @discount,
           total: @total,
           despesas_acessorias: @other_costs,
           informacoes_fisco: @fisco_informations,
