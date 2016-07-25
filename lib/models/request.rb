@@ -29,12 +29,6 @@ module WebmaniabrNfeRuby
           end
         end
 
-        if @transport
-          transport = @transport.to_hash
-        else
-          transport = ''
-        end
-
         {
           ID: @id,
           url_notificacao: @url_notification,
@@ -47,7 +41,7 @@ module WebmaniabrNfeRuby
           cliente: @client.to_hash,
           produtos: products,
           pedido: @order.to_hash,
-          transporte: transport
+          transporte: @transport ? @transport.to_hash : nil
         }
       end
     end
